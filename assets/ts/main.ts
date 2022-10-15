@@ -27,6 +27,17 @@ let Stack = {
             setupScrollspy();
         }
 
+        const getRandomInt = (min: number, max: number) => {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        const articleCategorys = document.querySelectorAll('.article-category');
+        articleCategorys.forEach((e) => {
+            e.classList.add(`article-category-color-${getRandomInt(1, 10)}`);
+        });
+
         /**
          * Add linear gradient background to tile style article
          */
