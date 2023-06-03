@@ -45,6 +45,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff, #fff, #253458, #753716, #fff, #
     --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
 
     --base-font-family: "Lato", var(--sys-font-family), var(--zh-font-family), sans-serif;
+    --serif-font-family: "Noto Serif TC", var(--base-font-family);
     --code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
@@ -69,7 +70,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff, #fff, #253458, #753716, #fff, #
     }
 
     @include respond(xl) {
-        --card-padding: 30px;
+        --card-padding: 37px;
     }
 
     --small-card-padding: 25px 20px;
@@ -92,11 +93,11 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff, #fff, #253458, #753716, #fff, #
 *   Article content font settings
 */
 :root {
-    --article-font-family: var(--base-font-family);
-    --article-font-size: 1.6rem;
+    --article-font-family: var(--serif-font-family);
+    --article-font-size: 1.9rem;
 
     @include respond(md) {
-        --article-font-size: 1.7rem;
+        --article-font-size: 1.85rem;
     }
 
     --article-line-height: 1.85;

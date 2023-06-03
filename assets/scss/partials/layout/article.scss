@@ -259,9 +259,10 @@
     code {
         color: var(--code-text-color);
         background-color: var(--code-background-color);
-        padding: 2px 4px;
+        padding: 4px 3px 1px 3px;
         border-radius: var(--tag-border-radius);
         font-family: var(--code-font-family);
+        font-size: 1.4rem;
     }
 
     .gallery {
